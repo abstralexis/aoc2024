@@ -8,6 +8,18 @@ Because I wanted to. I added `rayon` to dependencies in case I want to make thin
 add `tokio` too.
 ## Log
 ### Day 1
+#### Part 1: Differences
+I found this to be the hardest part of the day, simply because I had to write the parsing and figure
+out where Rust likes the txt file to be. It also had a fair few instructions, and missing out sorting
+on my first run definitely wasn't the best idea. 
+#### Part 2: Bad Handwriting
+So this Chief Historian has history teacher handwriting. Should've expected that. This task was to
+make a hash map of one with counts, and make a sum of all the ones in the left list that appear in 
+the right list, with each left entry multiplied by the counts in the right. `itertools` was great
+for this, using the `counts` function. Annoyingly, it doesn't have implementations for the `rayon` 
+parallel iterator types, but the performance was nice anyway. I got this one in the first run, which 
+is nice. Early-ish completion today!
+### Day 2
 ```rs
 todo!();
 ```
