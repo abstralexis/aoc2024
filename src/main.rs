@@ -1,7 +1,8 @@
 //! Main method thingy. I might use it for testing, might not.
 //! The *Main* point is allowing me to put all solutions in one
 //! crate and getting nice syntax highlighting. Isn't that wonderful? 
-use day1;
+// use day1;
+use day2;
 
 fn main() {
     println!(r###"
@@ -24,6 +25,9 @@ fn main() {
                                                                                                                                                                                                                                                                                                                                    
     "###);
 
-    day1::part1();
-    day1::part2();
+    // day1::part1();
+    // day1::part2();
+
+    day2::part1();
+    day2::part2();
 }

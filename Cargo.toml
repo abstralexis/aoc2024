@@ -7,8 +7,10 @@ edition = "2021"
 itertools = "0.13.0"
 rayon = "1.10.0"
 day1 = { path = "./day1/" }
+day2 = { path = "./day2/" }
 
 [workspace]
 members = [
-    "day1"
+    "day1", 
+    "day2"
 ]

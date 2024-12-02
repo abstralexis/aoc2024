@@ -20,6 +20,16 @@ for this, using the `counts` function. Annoyingly, it doesn't have implementatio
 parallel iterator types, but the performance was nice anyway. I got this one in the first run, which 
 is nice. Early-ish completion today!
 ### Day 2
+#### Part 1: Chernobyl Number 2
+The elves are horrible at managing the control rods! Calculate how many rads Santa will receive.
+Fun problem, Rust definitely slowed me down in places. It is helping me warm my hands up this 
+winter though, so I can't complain much.
+#### Part 2: Simply ignoring some of the problems and silencing those who say our reactor is unsafe
+This was a harder part of the problem - I tried several attempts at an odd sliding window of sorts
+for only checking permutations by removal when I really needed to, then I realised I am using Rust
+and it will run fast anyway. I just checked all permutations manually for each entry and it worked
+somehow. Unrelated, Rudolph's nose is now going green and he has an extra antler.
+### Day 3
 ```rs
 todo!();
 ```
