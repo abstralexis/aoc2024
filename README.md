@@ -30,6 +30,16 @@ for only checking permutations by removal when I really needed to, then I realis
 and it will run fast anyway. I just checked all permutations manually for each entry and it worked
 somehow. Unrelated, Rudolph's nose is now going green and he has an extra antler.
 ### Day 3
+#### Part 1: Someone left in a strcpy vulnerability
+So the memory is corrupted. It must have been written in C. The first part was entertaining to do. 
+I had to remember regex that I haven't done in years, and somehow got it working.
+#### Part 2: Do Do Do Do Do Do
+So apparently we have these instructions that also need to run so we don't end up adding too much.
+This part sent me nuts. Regex matching between a string predicate A and a string predicate B, where
+it only matches up to the first occurrence of B, is a pain. I had to learn lookbehind wizardry, and
+when I came to putting it into code i realised Rust's regex library doesn't support it. I had to 
+remove them with an editor online and then use that as the puzzle input. That worked.
+### Day 4
 ```rs
 todo!();
 ```
