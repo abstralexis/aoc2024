@@ -41,9 +41,19 @@ when I came to putting it into code i realised Rust's regex library doesn't supp
 remove them with an editor online and then use that as the puzzle input. That worked.
 ### Day 4
 Missed. Will be grinding 5 early morning out of order!
-```rs
-todo!();
-```
+#### Part 1: Get out of my way, wordsearch elf
+Okay, I can see why you are struggling on this one. I first tried a sliding window approach, but i seemed to be getting almost double the amount i should have. I checked my approach tens of times and
+got nowhere closer to fixing it. I ended up goig for the technique of getting all the horizontals,
+verticals, and diagonals and using a 2D sliding window to search for all occurrences of `XMAS` or 
+`SAMX`.
+#### Part 2: RTFM
+So I did all that work just to realise I didn't do the rules correct. Fine.
+This part I found to be a lot easier. Somehow, I was able to do a sliding window just fine, maybe
+because this one was only 3x3 and not 4x4. I got each window, and checked the diagonals using 
+very similar logic to my first Part 1 approach. I got this one right first try! Maybe I was not 
+doing the vertical or horizontal checks right? I might have been checking each one for `XMAS` **and** 
+`SAMX`, rather than `XMAS` **or** `SAMX`. That might have been my issue. No matter, I'm top 5 in
+the private leaderboard (for now, I shall soon be overtaken by Sergey I just know it).
 ### Day 5
 #### Part 1: Corrupted updates
 These guys can't make a non-broken system can they?
@@ -54,6 +64,10 @@ I can't catch a break with these elves.
 This one was also fairly easy, we just do what's essentially a bubble sort on each update, where the 
 indices to swap are the found locations of the update pages that break rules. Do that enough times
 until each and every one are sorted, and then it's all done.
+### Day 6
+```rs
+todo!();
+```
 ### Year Summary
 ```rs
 todo!();
