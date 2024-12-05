@@ -2,8 +2,9 @@
 //! The *Main* point is allowing me to put all solutions in one
 //! crate and getting nice syntax highlighting. Isn't that wonderful? 
 // use day1;
-//use day2;
-use day3;
+// use day2;
+// use day3;
+use day5;
 
 fn main() {
     println!(r###"
@@ -34,5 +35,8 @@ fn main() {
 
     // slow!
     // day3::part1();
-    day3::part2();
+    // day3::part2();
+
+    // day5::part1();
+    day5::part2();
 }

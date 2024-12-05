@@ -40,9 +40,20 @@ it only matches up to the first occurrence of B, is a pain. I had to learn lookb
 when I came to putting it into code i realised Rust's regex library doesn't support it. I had to 
 remove them with an editor online and then use that as the puzzle input. That worked.
 ### Day 4
+Missed. Will be grinding 5 early morning out of order!
 ```rs
 todo!();
 ```
+### Day 5
+#### Part 1: Corrupted updates
+These guys can't make a non-broken system can they?
+This one was fairly easy - parse the rules, and for each parsed update I check to see if it breaks
+any of the rules. I then sum the middle number of each, for some reason.
+#### Part 2: Oh, but we also want the corrupted ones fixed
+I can't catch a break with these elves.
+This one was also fairly easy, we just do what's essentially a bubble sort on each update, where the 
+indices to swap are the found locations of the update pages that break rules. Do that enough times
+until each and every one are sorted, and then it's all done.
 ### Year Summary
 ```rs
 todo!();
